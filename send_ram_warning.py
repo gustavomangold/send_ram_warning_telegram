@@ -21,7 +21,7 @@ cap_value = .7
 chat_id = token_id[0].strip("\n")
 TOKEN = token_id[1].strip("\n")
 # your message here
-message = 'Atenção! O uso da RAM do pcrites1 está acima de {}%! Atualmente, seu uso é de aproximadamente: {}%'.format(cap_value * 100, 100 * usage_value)
+message = 'Atenção! O uso da RAM do computador está acima de {}%! Atualmente, seu uso é de aproximadamente: {}%'.format(cap_value * 100, 100 * usage_value)
 
 if usage_value > cap_value:
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
